@@ -1,9 +1,12 @@
 <script setup>
 import Header from './components/Header.vue'
+import Pets from './components/table/Pets.vue'
+
 </script>
 
 <template>
   <Header />
+  <Pets />
 </template>
 
 <style>
