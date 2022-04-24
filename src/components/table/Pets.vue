@@ -13,8 +13,8 @@
               </tr>
           </thead>
           <tbody>
-              <tr v-for="pet in currentPets " :key="pet.id">
-                  <td class="border-y-2 border-x-2">{{pet.id}}</td>
+              <tr v-for="(pet,index) in pets " :key="index">
+                  <td class="border-y-2 border-x-2">{{index}}</td>
                   <td class="border-y-2 border-x-2">{{pet.name}}</td>
                   <td class="border-y-2 border-x-2">{{pet.category?.name}}</td>
                   <td class="border-y-2 border-x-2">{{pet.status}}</td>
@@ -57,7 +57,7 @@ computed:{
   }
 },
 created(){
-    axios.get('https://petstore.swagger.io/v2/pet/findByStatus?status=available')
+    axios.get('https://petstore.swagger.io/v2/user/login?username=nhat&password=123456')
     .then(response =>{
       this.pets = response.data
       console.log(this.pets)

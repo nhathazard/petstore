@@ -1,12 +1,13 @@
 <script setup>
 import Header from './components/Header.vue'
-import Pets from './components/table/Pets.vue'
-
+// import Pets from './components/table/Pets.vue'
+import Users from './components/table/Users.vue'
 </script>
 
 <template>
   <Header />
-  <Pets />
+  <!-- <Pets /> -->
+  <Users />
 </template>
 
 <style>
